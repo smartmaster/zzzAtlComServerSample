@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {fab0757f-d802-4b6b-be4b-ec0542af1912} = s 'zzzDllObj class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{c88a791c-87ac-47e2-b69f-77b75bd3683f}'
+			Version = s '1.0'
+		}
+	}
+}

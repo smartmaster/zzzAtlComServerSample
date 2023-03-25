@@ -1,0 +1,35 @@
+// zzzDllServer.idl : IDL source for zzzDllServer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (zzzDllServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(20a1525c-c8ac-435b-802e-6cc0ee501cc4),
+	pointer_default(unique)
+]
+interface IzzzDllObj : IUnknown
+{
+	HRESULT Test();
+};
+[
+	uuid(c88a791c-87ac-47e2-b69f-77b75bd3683f),
+	version(1.0),
+]
+library zzzDllServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(fab0757f-d802-4b6b-be4b-ec0542af1912)
+	]
+	coclass zzzDllObj
+	{
+		[default] interface IzzzDllObj;
+	};
+};
+
+import "shobjidl.idl";

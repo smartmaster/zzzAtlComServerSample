@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zzzDllServer", "zzzDllServer\zzzDllServer.vcxproj", "{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zzzDllServerPS", "zzzDllServerPS\zzzDllServerPS.vcxproj", "{99FE3C01-F934-4EA8-884D-7BD81693C410}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6} = {0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Debug|x64.ActiveCfg = Debug|x64
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Debug|x64.Build.0 = Debug|x64
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Debug|x86.Build.0 = Debug|Win32
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Release|x64.ActiveCfg = Release|x64
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Release|x64.Build.0 = Release|x64
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Release|x86.ActiveCfg = Release|Win32
+		{0E5B374B-46C6-4FC3-BF4E-F019B60B74F6}.Release|x86.Build.0 = Release|Win32
+		{99FE3C01-F934-4EA8-884D-7BD81693C410}.Debug|x64.ActiveCfg = Debug|x64
+		{99FE3C01-F934-4EA8-884D-7BD81693C410}.Debug|x86.ActiveCfg = Debug|Win32
+		{99FE3C01-F934-4EA8-884D-7BD81693C410}.Release|x64.ActiveCfg = Release|x64
+		{99FE3C01-F934-4EA8-884D-7BD81693C410}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5983A0F8-516E-462B-AD13-EA2436F9AB3C}
+	EndGlobalSection
+EndGlobal

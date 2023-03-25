@@ -1,0 +1,40 @@
+// zzzAtlServer.idl : IDL source for zzzAtlServer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (zzzAtlServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+[
+	object,
+	uuid(fd48b375-0467-4ce6-9940-b06b63578c43),
+	pointer_default(unique)
+]
+interface IzzzObject : IUnknown
+{
+	HRESULT Test();
+};
+
+
+
+[
+	uuid(42e7811d-a647-4dae-9909-22cc30cb433d),
+	version(1.0),
+]
+library zzzAtlServerLib
+{
+
+	importlib("stdole2.tlb");
+	[
+		uuid(8e0b88ca-8b91-428a-98ee-295081f20e71)
+	]
+	coclass zzzObject
+	{
+		[default] interface IzzzObject;
+	};
+};
+
+import "shobjidl.idl";

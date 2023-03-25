@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {8e0b88ca-8b91-428a-98ee-295081f20e71} = s 'zzzObject class'
+		{
+			LocalServer32 = s '%MODULE%'
+			{
+				val ServerExecutable = s '%MODULE_RAW%'
+			}
+			TypeLib = s '{42e7811d-a647-4dae-9909-22cc30cb433d}'
+			Version = s '1.0'
+		}
+	}
+}
